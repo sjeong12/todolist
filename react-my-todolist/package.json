@@ -1,7 +1,8 @@
 {
-  "name": "vue-my-todolist",
+  "name": "react-my-todolist",
   "version": "1.0.0",
   "description": "",
+  "main": "index.js",
   "scripts": {
     "dev": "webpack serve --progress --mode development",
     "build": "webpack --progress --hide-modules --mode production"
@@ -9,9 +10,6 @@
   "author": "sujlee <sujlee@student.42seoul.kr>",
   "license": "ISC",
   "devDependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.36",
-    "@fortawesome/free-solid-svg-icons": "^5.15.4",
-    "@fortawesome/vue-fontawesome": "^2.0.2",
     "css-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.2",
     "style-loader": "^3.2.1",
@@ -22,14 +20,13 @@
   "dependencies": {
     "@babel/core": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
     "babel-loader": "^8.2.2",
     "mini-css-extract-plugin": "^2.2.0",
-    "node-sass": "^6.0.1",
-    "sass-loader": "^12.1.0",
-    "vue": "^2.6.14",
-    "vue-loader": "^15.9.8",
-    "vue-template-compiler": "^2.6.14",
-    "vuex": "^3.6.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
+    "styled-components": "^5.3.0",
     "webpack-bundle-analyzer": "^4.4.2"
   }
 }

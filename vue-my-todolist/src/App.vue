@@ -1,23 +1,39 @@
 <template>
   <div id="main">
-    {{ message }}
+    <todo-head/>
+    <todo-list/>
+    <todo-create/>
   </div>
 </template>
 
 <script>
+import TodoCreate from './components/TodoCreate.vue'
+import TodoHead from './components/TodoHead.vue'
+import TodoList from './components/TodoList.vue'
 export default {
-  name: 'app',
-  data() {
-    return {
-      message: 'Hello World',
-    };
-  },
+  components: { TodoHead, TodoList, TodoCreate },
+  name: 'app'
 };
 </script>
 
-<style>
+<style lang="scss">
+body {
+  background: #e9ecef;
+}
 #main {
-  font-size: 18px;
-  font-family: 'Roboto', sans-serif;
+  width: 512px;
+	height: 768px;
+
+	position: relative;
+	background: white;
+	border-radius: 16px;
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.04);
+
+	margin: 0 auto;
+
+	margin-top: 96px;
+	margin-bottom: 32px;
+	display: flex;
+	flex-direction: column;
 }
 </style>
